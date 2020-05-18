@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>navigation menu</title>
+    <!-- <link rel="stylesheet" type="text/css" href="button.css">   -->
+    <style>
+        .navbar{
+            background-color: brown;
+            border-radius: 4px;
+            
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 6px 6px;
+            padding-top: 20px;
+            
+        
+            
+        }
+        .navbar li :hover{
+            color: yellowgreen;
+        }
+        .navbar ul{
+            /* is se background-color nahi nahi jayega */
+              overflow: auto;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            border:2px none ;
+            margin-top: 40px;
+            padding-top: 20px;
+
+        }
+        .navbar input{
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 10px;
+            /* margin-right:214px; */
+            /* right: 214px; */
+            height: 20px;
+        }
+        .search{
+            float: right;
+
+        }
+        /* .btn{font-family: cursive;
+            border: 2px solid black;
+            background-color: chocolate;
+            float: left;
+            cursor:pointer;
+            font-size:12px;
+            border-radius:2px;
+            margin-left:1073px;
+    
+        } */
+        .button{
+            float: right;
+            background-color: green;
+            padding:12px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 10px;
+            /* height: 20px*/
+            
+            
+
+        }
+        a{
+            text-decoration: none;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"> ABOUT</a></li>
+                <li><a href="#"> HOME</a></li>
+                <li><a href="#"> SERVICES</a></li>
+                <li><a href="#"> CONTACT US</a></li>
+                
+                <div class="search">
+                    <input type="text" name="search"id="search" placeholder="search seller near you">
+                    <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                    <button type="button" class="btn btn-info">
+                        <span class="glyphicon glyphicon-search"></span> Search
+                      </button>
+
+                </div>
+                <div>
+                 <button class="button"> <a href="loginprofile1.html" >LOG IN</a> </button>
+    
+            
+                </div>
+                             
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+    
+</body>
+
+</html>

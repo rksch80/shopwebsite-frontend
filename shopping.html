@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .navbar navbar-expand-lg navbar-light{
+      position: sticky;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* justify-content: flex-start;
+     align-content: stretch;
+     flex-shrink: 0" */
+    }
+
+    /* .flex-container > div {
+       background-color: #f1f1f1;
+       width: 100px;
+       margin: 10px;
+       text-align: center;
+       line-height: 75px;
+       font-size: 30px;
+       } */
+
+    #login {
+      text-align: center;
+
+    }
+
+    .card :hover {
+      transform: scale(1.1);
+    }
+
+    input {
+      width: 350px;
+      border-radius: 6px;
+    }
+   
+  </style>
+</head>
+</head>
+
+<body>
+  <div class="fixed-top" style="background-color:yellow;">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"> <font color="#FF6E33 ">MY</font> BASKET</a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="loginprofile1.html"><b>Login & Signup</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><b></b></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="search for products" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  </div>
+  <br>
+  <br>
+  <!-- <table border="0px" width="100%" bgcolor="yellow" style="over-flow:auto" >
+    <tr>
+      <td>
+        <h3 width="12.5%" height="10px" style="text-align: right;">
+          <font color="#FF6E33 ">MY</font> BASKET
+        </h3>
+      </td>
+      <td align="left">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+      </td>
+      <th id="login"> <a href="loginprofile1.html">Login & Signup</a> </th>
+      <th>More</th>
+      <td height="10px" align="right" width="8px"><img src="cart2.jpg" alt=""></td>
+    </tr>
+  </table> -->
+  <table border="0" width="100%" hieght="8%">
+    <tr>
+      <hr>
+      <td width="12.5%">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Beverages
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Tea</a>
+            <a class="dropdown-item" href="#">Coffee</a>
+            <a class="dropdown-item" href="#">juice</a>
+            <a class="dropdown-item" href="#">Cold drinks</a>
+          </div>
+        </div>
+      </td>
+      <td width="12.5%">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            personal cares
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Soap</a>
+            <a class="dropdown-item" href="#">Deodorants</a>
+            <a class="dropdown-item" href="#">Moisturizer</a>
+            <a class="dropdown-item" href="#">Shaving cream</a>
+          </div>
+        </div>
+      </td>
+      <td width="12.5%">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dry Goods
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Rice</a>
+            <a class="dropdown-item" href="#">Daal</a>
+            <a class="dropdown-item" href="#">Sugar</a>
+            <a class="dropdown-item" href="#">pasta</a>
+            <a class="dropdown-item" href="#">Beans</a>
+          </div>
+        </div>
+      </td>
+      <td width="12.5%">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cleaners
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Detergent</a>
+            <a class="dropdown-item" href="#">Toilet cleaner</a>
+            <a class="dropdown-item" href="#">Glass cleaner</a>
+            <a class="dropdown-item" href="#">Phenyl</a>
+            <a class="dropdown-item" href="#">Scrubbers</a>
+            <a class="dropdown-item" href="#">Hand cleaner</a>
+          </div>
+        </div>
+      </td>
+      <td width="12.5%">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Canned Goods
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </td>
+      <td width="12.5%">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Diary Products
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Milk</a>
+            <a class="dropdown-item" href="#">Butter</a>
+            <a class="dropdown-item" href="#">Dahi</a>
+            <a class="dropdown-item" href="#">Ice cream</a>
+            <a class="dropdown-item" href="#">Cheese</a>
+          </div>
+        </div>
+      </td>
+      <td width="12.5%">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Masalas
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">lal mirch powder</a>
+            <a class="dropdown-item" href="#">kali mirch powder</a>
+            <a class="dropdown-item" href="#">Dhania powder</a>
+            <a class="dropdown-item" href="#">Haldi powder</a>
+            <a class="dropdown-item" href="#">Jeera powder</a>
+            <a class="dropdown-item" href="#">Sabji masala</a>
+            <a class="dropdown-item" href="#">chicken masala</a>
+            <a class="dropdown-item" href="#">Garam masala</a>
+
+          </div>
+        </div>
+      </td>
+      <td width="12.5%">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Others
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <!-- <img src="banner3.jpg" width="100%" height="250"> -->
+  <div class="container-fluid">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"style="display: flex;flex-wrap:wrap;flex-direction:row >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="banner3.jpg" class="d-block w-100" alt="..."height="280">
+      </div>
+      <div class="carousel-item">
+        <img src="banner1.jpg" class="d-block w-100" alt="..."height="280">
+      </div>
+      <div class="carousel-item">
+        <img src="banner1.jpg" class="d-block w-100" alt="..."height="280">
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- popular brands -->
+
+  <!-- <table border="0px" width="100%" > -->
+  <div>
+    <hr>
+    <h3 style="text-align: center;">SHOP BY BRANDS</h3>
+  </div>
+  <tr>
+    <br>
+    <div style="display: flex;flex-wrap:wrap;flex-direction: row;">
+  <tr>
+    <td>
+      <div class="card" style="width: 13rem;">
+        <img class="card-img-top" src="brands/amullogo.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">AMUL</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 13rem;">
+        <img class="card-img-top" src="brands/aashirvaad.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">AHIRWAAD</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 13rem;">
+        <img class="card-img-top" src="brands/patanjali.jpeg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">PATANJALI</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 13rem;">
+        <img class="card-img-top" src="brands/britannia.png" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">BRITANNIA</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 13rem;">
+        <img class="card-img-top" src="brands/nestle.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">NESTLE</p>
+        </div>
+      </div>
+    <td>
+      <div class="card" style="width: 13rem;">
+        <img class="card-img-top" src="brands/dabur.png" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">DABUR</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <!-- large quantity product -->
+  </div>
+  <div>
+    <hr>
+    <h3 style="text-align: center;">FOOD GRAINS</h3>
+  </div>
+  <tr>
+    <br>
+    <div style="display: flex;flex-wrap:wrap;flex-direction:row ;">
+  <tr>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="foodgrain/atta.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">AATA</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="foodgrain/rice.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">RICE</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="foodgrain/daal.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">DAAL</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="foodgrain/sugar.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">SUGAR</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="foodgrain/salt.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">SALT</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  </div>
+  <!-- </table> -->
+
+  <!-- oil product -->
+  <!-- <table border="0" width="100%" > -->
+  </div>
+  <div>
+    <hr>
+    <h3 style="text-align: center;">OIL</h3>
+  </div>
+  <tr>
+    <br>
+    <div style="display: flex;flex-wrap:wrap;flex-direction:row ;">
+  <tr>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="oil/oil.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">SARSO TEL</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="oil/refined.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">REFINED OIL</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="oil/sunflower.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">SUNFLOWER OIL</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="oil/dalda.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">DALDA</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="oil/ghee.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">GHEE</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  </div>
+  <!-- </table> -->
+  <!-- oil -->
+  <!-- <table border="0" width="100%" > -->
+  </div>
+  <div>
+    <hr>
+    <h3 style="text-align: center;">MASALAS</h3>
+  </div>
+  <tr>
+    <br>
+    <div style="display: flex;flex-wrap:wrap;flex-direction:row ;">
+  <tr>
+    <td>
+      <div class="card" style="width: 15.5rem;" >
+        <a href="masala2.html"> <img class="card-img-top" src="masala/laalmirch.jpg" alt="Card image cap" height=200 ></a>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">LAL MIRCH</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <a href="masala2.html"> <img class="card-img-top" src="masala/haldipowder.jpg" alt="Card image cap" height=200></a>
+       <div class="card-body">
+          <p class="card-text" style="text-align: center;">HALDI</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <a href="masala2.html"><img class="card-img-top" src="masala/jeerapowder.jpg" alt="Card image cap" height=200></a>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">JEERA</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <a href="masala2.html"> <img class="card-img-top" src="masala/dhaniapowder.jpg" alt="Card image cap" height=200></a>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">DHANIA</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <a href="masala2.html"> <img class="card-img-top" src="masala/kalimirchpowder.jpg" alt="Card image cap" height=200></a>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">KALI MIRCH</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  </div>
+  <!-- </table> -->
+  <!-- DRINKS-->
+  <!-- <table border="0" width="100%" > -->
+  </div>
+  <div>
+    <hr>
+    <h3 style="text-align: center;">DRINKS</h3>
+  </div>
+  <tr>
+    <br>
+    <div style="display: flex;flex-wrap:wrap;flex-direction:row ;">
+  <tr>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="drinks/juices.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">JUICE</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="drinks/coldrinks.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">COLD DRINKS</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="drinks/shakes.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">SHAKES</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="drinks/milk.png" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">MILK</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="drinks/amul.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">LASSI</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  </div>
+  <!-- </table> -->
+
+  <!-- Drinks -->
+  <!-- <table border="0" width="100%" > -->
+  </div>
+  <div>
+    <hr>
+    <h3 style="text-align: center;">SNACKS</h3>
+  </div>
+  <tr>
+    <br>
+    <div style="display: flex;flex-wrap:wrap;flex-direction:row ;">
+  <tr>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="snacks/chips.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">CHIPS</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="snacks/namkeen.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">NAMKEENS</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="snacks/pasta.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">PASTA</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="snacks/chocos.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">CHOCOS</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="snacks/biscuits.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">BUISCUITS</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  </div>
+  <!-- </table> -->
+  <div class="flex-container1">
+    <tr>
+      <td><img src="ad1.jpg" alt="" width="33%"></td>
+      <td><img src="ad2.jpg" alt="" width="33%"></td>
+      <td><img src="ad3.jpg" alt="" width="33%"></td>
+    </tr>
+  </div>
+  <!-- BEAUTY PRODUCTS -->
+  <!-- <table border="0" width="100%" > -->
+  </div>
+  <div>
+    <hr>
+    <h3 style="text-align: center;">BEAUTY PRODUCTS</h3>
+  </div>
+  <tr>
+    <br>
+    <div style="display: flex;flex-wrap:wrap;flex-direction:row ;">
+  <tr>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="beauty_products/soaps.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">SOAP</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="beauty_products/shampoo.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">SHAMPOO</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="beauty_products/facewash.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align: center;">FACE WASH</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="beauty_products/facecream.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">FACE CREAM</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card" style="width: 15.5rem;">
+        <img class="card-img-top" src="beauty_products/gel.jpg" alt="Card image cap" height=200>
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">HAIR JEL</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  </div>
+  <!-- </table> -->
+  
+  <hr>
+  <p>
+    POPULAR CATEGORIES: Washing Powders, Milk, Tea, Liquid Soaps & Bars, Toor Dal, Ghee, Washing Bars, Other Fruits,
+    Butter & Cream, Basmati Rice, Cheese, Fresh Chicken, Toothpaste, Toilet Cleaners, Glucose, Marie & Milk Biscuits,
+    <br>
+    <br>
+    POPULAR BRANDS: Fresho, bb Royal, Surf Excel, Amul, Nestle , Saffola, Britannia, Harpic, Lizol, Colgate, Dettol,
+    Dabur, Tata I Shakti, Dhara , Fresho Meats, Parle, Real, Tropicana, Kissan, danone,
+    <br>
+    <br>
+    CITIES WE SERVE: Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore, Coimbatore, Vijayawada-Guntur, Kolkata,
+    Ahmedabad-Gandhinagar, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore, Chandigarh
+    Tricity, Jaipur, Bhopal, Noida-Ghaziabad, Kochi,
+    <br>
+    <br>
+    PAYMENT OPTIONS: CASH ON DELIVERY
+  </p>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
